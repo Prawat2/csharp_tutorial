@@ -1,24 +1,20 @@
-namespace csharp_tutorial
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace demo
 {
-    public partial class lbl_a : Form
+    public partial class Form1 : Form
     {
-        public lbl_a()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int result = 0;
-            int a = int.Parse(txt_a.Text);
-            int b = int.Parse(txt_b.Text);
-            result  = a + b;
-            lbl_result.Text = result.ToString();
         }
     }
 }
